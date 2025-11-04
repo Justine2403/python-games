@@ -1,7 +1,6 @@
 # Python games 
 Little games to get to know better Python language.
 
-# List of games:
 ## Guess the number 
 Program generate randomly a number between 1 and 9, user need to find the number.
 Methods used:
