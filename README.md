@@ -5,7 +5,7 @@ Little games to get to know better Python language.
 Program generate randomly a number between 1 and 9, user need to find the number.
 Methods used:
 - `random.randint()`
-- `is.digit()` (boolean) 
+- `is.digit()` (boolean) to verify that user has entered a valid number
 
 ## Rock, paper, scissors 
 User plays rock, paper, scissors with the program. 
