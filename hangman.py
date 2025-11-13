@@ -1,18 +1,12 @@
 import random
+from generic_function import valid_word_bool
+
 list_word = ["word", "essay", "panda", "chair", "bear"]
 
 def get_valid_word_list(list_word):
     """Check if the word in the list is valid"""
     word = random.choice(list_word)
     return word
-
-def valid_word(word):
-    """Check if the word input is valid"""
-    while not word.isalpha(): 
-        print("Not a valid word, please retry:")
-        word = input()
-    return word
-
 
 def code_hangman(word):
     life = 7
@@ -55,7 +49,7 @@ def code_hangman(word):
         else:
             used_letter.append(letter_choice)
             life-=1
-            print(f"Your letter, {letter_choice}, is not in the word\n")
+            print(f"Your letter: {letter_choice}, is not in the word\n")
             print(f"You have {life} left and you use this letter: {used_letter}")
             print(f"Current word: {''.join(current_word)}")
         
@@ -91,11 +85,12 @@ def hangman():
         code_hangman(word)
    
     if choice=="2":
-        print("Please enter a word to make them guess: ")
-        word_user = input()
-        word_valid = valid_word(word_user)
+        word_user = input("Please enter a word to make them guess: ")
+        while not valid_word_bool(word_user):
+            word_user = input("Please enter a valid word: ")
+        #word_valid = valid_word(word_user)
         print("\n"*10)
-        code_hangman(word_valid)        
+        code_hangman(word_user)        
 
 hangman()
 
