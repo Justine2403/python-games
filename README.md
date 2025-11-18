@@ -23,3 +23,6 @@ Method used:
 - for countdown before the game start:
   - `divmod(t, 60)` to convert second into minute, second if needed
   - `print(timer, '\r')` where '\r' allows to print in the same line
+ 
+## Tic Tac Toe
+Play Tic Tac Toe with the computer, if you have 3 same symboles on a vertical, horizontal or diagonal line, you win !
