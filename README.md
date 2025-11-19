@@ -26,3 +26,15 @@ Method used:
  
 ## Tic Tac Toe
 Play Tic Tac Toe with the computer, if you have 3 same symboles on a vertical, horizontal or diagonal line, you win !
+A simple terminal-based Tic-Tac-Toe game where a human player (X) plays against a computer (O). The game uses OOP (Object-Oriented Programming) and is defined into two main parts:
+
+This programs uses OOP (Object-Oriented Programming)
+
+Player classes:
+- HumanPlayer asks the user for input
+- RandomComputerPlayer picks a random available move
+
+TicTacToe class:
+- Manages the board, checks available moves, applies moves, prints the board, and detects wins across rows, columns, and diagonals
+
+The play function runs the game loop, alternates turns between X and O, prints the board after each move, and stops when someone wins or the game ends in a tie.
