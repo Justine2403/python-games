@@ -19,7 +19,7 @@ The game displays correct letters in the proper positions and limits the number 
 
 Key functions / logic used:
 - `random.choice(list)`: selects a random word when playing against the program
-- Validation of user-provided words (via valid_word_bool())
+- Validation of user-provided words
 - Tracking:
   - letters already used
   -   correct letters revealed in the word
