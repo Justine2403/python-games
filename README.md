@@ -14,7 +14,18 @@ Key techniques:
 - dictionnary that define the key-value of winning pairs (rock-scissors, paper-rock, scissors-paper)
 
 ## Hangman game
-The user has to guess a word chosen either by another user or randomly by the program. The game shows correct letters in place and limits the number of attempts.
+The user has to guess a word chosen either by another user or randomly by the program.
+The game displays correct letters in the proper positions and limits the number of attempts.
+
+Key functions / logic used:
+- `random.choice(list)`: selects a random word when playing against the program
+- Validation of user-provided words (via valid_word_bool())
+- Tracking:
+  - letters already used
+  -   correct letters revealed in the word
+  -   remaining lives
+- List manipulation to update the displayed word (['__', '_', ...])
+- Input validation (`isalpha()`, length checks)
 
 ## Chrono game
 A timing-based game: the program generates a random number of seconds; the user must stop a timer when that time is reached.
