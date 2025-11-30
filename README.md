@@ -1,4 +1,4 @@
-# Python games 
+# Python Games 
 Collection of simple games written in Python for practice and reference.
 ## Available Games
 ## Guess the number 
@@ -13,7 +13,7 @@ Key techniques:
 - `random.choice(list)` where list contains the possible moves (rock, paper, scissors)
 - dictionnary that define the key-value of winning pairs (rock-scissors, paper-rock, scissors-paper)
 
-## Hangman game
+## Hangman Game
 The user has to guess a word chosen either by another user or randomly by the program.
 The game displays correct letters in the proper positions and limits the number of attempts.
 
@@ -27,7 +27,7 @@ Key functions / logic used:
 - List manipulation to update the displayed word (['__', '_', ...])
 - Input validation (`isalpha()`, length checks)
 
-## Chrono game
+## Chrono Game
 A timing-based game: the program generates a random number of seconds; the user must stop a timer when that time is reached.
 Key methods:
 - `time.time()` to start and stop the time
@@ -46,3 +46,6 @@ TicTacToe class:
 - Manages the board, checks available moves, applies moves, prints the board, and detects wins across rows, columns, and diagonals
 
 The play function runs the game loop, alternates turns between X and O, prints the board after each move, and stops when someone wins or the game ends in a tie.
+
+## Snake Game
+
