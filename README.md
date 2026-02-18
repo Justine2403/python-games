@@ -49,3 +49,5 @@ The play function runs the game loop, alternates turns between X and O, prints t
 
 ## Snake Game
 
+Simple game where player need to catch element to gain points. The more point you have, the longer your snake will be.
+
